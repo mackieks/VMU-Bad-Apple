@@ -49,7 +49,7 @@ int main()
 		vmu_draw_lcd(lcd, currFrameBuffer);
 		
 		curTime = timer_us_gettime64();
-		timer_spin_sleep(33 - ((curTime - oldTime) / 1000)); // get how long we gotta wait before processing the next frame (shoutouts to skewb for the maths here :p )
+		timer_spin_sleep(16 - ((curTime - oldTime) / 1000)); // get how long we gotta wait before processing the next frame (shoutouts to skewb for the maths here :p )
 		//additional note: this might actually make the song end up after the frames are finished because we should normally pause for 33.33... frames but this only accepts an integer
 	}
 

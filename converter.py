@@ -6,8 +6,8 @@ and a bit-size of 1 or equivalent so that it can be converted correctly.
 from PIL import Image
 
 totalbytes = bytearray()
-for i in range(6073): # Iterate through all frames
-    currentPath = "frames/frame" + str(i) + ".png" # Set Path to current frame (change filepath and extension accordingly)
+for i in range(1,13142): # Iterate through all frames
+    currentPath = "frames/out-" + str(i) + ".png" # Set Path to current frame (change filepath and extension accordingly)
 
     image = Image.open(currentPath) # Open Image at path
 
